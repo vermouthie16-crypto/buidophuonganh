@@ -463,3 +463,13 @@ div[class*="avatar-frame"] img {
     display: block !important;
     border-radius: 32px !important; /* Bo góc trực tiếp lên ảnh để không phụ thuộc vào khung cha */
 }
+/* Ép ẩn hoàn toàn mọi chữ ẩn hoặc text giả lập trong khung avatar */
+.avatar-frame {
+    font-size: 0 !important;
+    color: transparent !important;
+    text-indent: -9999px !important;
+}
+
+.avatar-frame * {
+    font-size: initial; /* Giữ nguyên kích thước cho các phần tử con bên trong nếu có */
+}
